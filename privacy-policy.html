@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rein — Privacy Policy</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #17171a;
+    --muted: #5a5a63;
+    --rule: #e3e3e8;
+    --accent: #0a7d3c;
+    --card: #f6f6f8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0c0c0c;
+      --fg: #ededf0;
+      --muted: #9a9aa3;
+      --rule: #232326;
+      --accent: #00ff66;
+      --card: #141416;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 48px 20px 96px;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 4px; letter-spacing: -0.02em; }
+  h2 {
+    font-size: 1.15rem; margin: 44px 0 10px; padding-top: 20px;
+    border-top: 1px solid var(--rule); letter-spacing: -0.01em;
+  }
+  .sub { color: var(--muted); margin: 0 0 8px; }
+  .updated { color: var(--muted); font-size: 0.9rem; margin: 0 0 32px; }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 14px; padding-left: 22px; }
+  li { margin-bottom: 7px; }
+  strong { font-weight: 650; }
+  a { color: var(--accent); }
+  .callout {
+    background: var(--card);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 10px 10px 0;
+    padding: 16px 18px;
+    margin: 20px 0;
+  }
+  .callout p:last-child { margin-bottom: 0; }
+  footer {
+    margin-top: 56px; padding-top: 20px;
+    border-top: 1px solid var(--rule);
+    color: var(--muted); font-size: 0.9rem;
+  }
+  code {
+    background: var(--card); padding: 1px 5px; border-radius: 4px;
+    font-size: 0.88em; word-break: break-all;
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <h1>Privacy Policy</h1>
+  <p class="sub">Rein: Reels Blocker &amp; Focus — <code>com.musharrafapps.rein</code></p>
+  <p class="updated">Last updated: 10 October 2026</p>
+
+  <div class="callout">
+    <p><strong>The short version.</strong> Rein collects nothing. There are no accounts, no
+    analytics, no advertising, and no servers belonging to us. Everything the app records about your
+    screen time stays in storage on your phone and is deleted when you uninstall it.</p>
+  </div>
+
+  <h2>Who this is from</h2>
+  <p>Rein is an independently developed Android app that helps you limit your own use of
+  short-form video feeds and other distracting apps. In this policy, "the app" means Rein
+  and "we" means its developer.</p>
+
+  <h2>What we do not collect</h2>
+  <p>We do not collect, store on our systems, transmit to ourselves, sell, or share any of the
+  following:</p>
+  <ul>
+    <li>Names, email addresses, phone numbers, or any account identifiers</li>
+    <li>Screen contents, screenshots, or recordings</li>
+    <li>Browsing history, search terms, or the addresses of sites you visit (the adult filter checks
+    a site's domain on the device, and keeps no record of it)</li>
+    <li>Messages, contacts, call logs, photos, or files</li>
+    <li>Location data</li>
+    <li>Advertising identifiers or device fingerprints</li>
+    <li>Payment or financial information</li>
+  </ul>
+  <p>The app contains no analytics SDK, no crash-reporting SDK, no advertising SDK, and no
+  third-party tracking of any kind.</p>
+
+  <h2>Accessibility Service</h2>
+  <p>Rein uses Android's Accessibility Service API. This is the permission that lets the app
+  do its core job, and it is the most sensitive thing the app asks for, so it is worth being precise
+  about.</p>
+  <p><strong>What it is used for.</strong> To recognise, on screen, when you have opened a
+  short-form video feed — YouTube Shorts, Instagram Reels, and equivalents in other apps — and to
+  count how many times you have scrolled within one. That recognition is what triggers the block
+  overlay, the scroll limit, and the daily time budget.</p>
+  <p><strong>What it looks at.</strong> The structure of the screen: the package name of the app in
+  the foreground, the identifiers Android assigns to on-screen elements, and the shape of the view
+  hierarchy. It uses these to answer one question — "is this a short-video feed?"</p>
+  <p><strong>Websites, when the adult content filter is on.</strong> The service reads the address
+  bar of your browser to get the domain of the page you are on, and compares it against the filter
+  list on the device. The domain is not recorded, kept as history, or sent anywhere.</p>
+  <p><strong>Closing floating windows.</strong> If a blocked feed is moved into a floating
+  picture-in-picture window, the service performs a swipe gesture to dismiss that window. This is
+  the only gesture it performs, and it gives the app no extra ability to read anything.</p>
+  <p><strong>Payment apps.</strong> When a UPI or banking app is opened, any block screen is removed
+  immediately, so a PIN or password screen is never covered.</p>
+  <p><strong>What happens to it.</strong> Nothing is stored and nothing is transmitted. The
+  screen data is examined in memory, produces a yes/no answer, and is discarded. The app does not
+  keep a log of what was on your screen, and it has no way of sending one anywhere.</p>
+  <p><strong>What is saved.</strong> Only counts and durations, per app, per day — for example
+  "Instagram: 34 minutes, 210 scrolls today". These are written to a database on your phone so the
+  app can draw your statistics and enforce your limits. They never leave the device.</p>
+
+  <h2>Usage Access</h2>
+  <p>The Usage Access permission tells the app which application is currently in the foreground and
+  for how long. It is used to enforce the daily time budgets you set and to show your usage
+  statistics. This information is read on the device, used on the device, and never transmitted.</p>
+
+  <h2>Display over other apps</h2>
+  <p>This permission is used only to draw Rein's own blocking screen on top of an app you
+  have chosen to limit. It grants the app no ability to see what is underneath it.</p>
+
+  <h2>Notifications</h2>
+  <p>Notifications are used to show the state of a running focus session, to tell you when a
+  session ends, and to warn you if protection has stopped running — the accessibility service can
+  be shut down by the system's battery management without any warning, and a blocker that has
+  silently stopped blocking should say so. All notification content is generated on the device.</p>
+
+  <h2>VPN permission and the adult content filter</h2>
+  <p>If — and only if — you switch on the optional adult content filter, Rein uses Android's
+  <code>VpnService</code> API to run a <strong>local DNS filter</strong> on the device.</p>
+  <div class="callout">
+    <p><strong>No traffic is sent to us or to any third party.</strong> This is not a conventional
+    VPN. Nothing is proxied, routed, or tunnelled to a remote server. The VPN interface exists purely
+    so the app can inspect DNS lookups locally and refuse to resolve domains that appear on the
+    filter list. Your browsing is not read, recorded, logged, or forwarded.</p>
+  </div>
+  <p>The filter is switched on for new installs, but the VPN part of it never starts on its own:
+  the app first explains what the filter does, and then Android shows its own permission dialog,
+  which you can decline. Switching the filter off removes the VPN interface entirely.</p>
+
+  <h2>The one network request the app makes</h2>
+  <p>To keep the adult content filter useful, the app periodically downloads a publicly available
+  list of domains from the open-source StevenBlack/hosts project on GitHub:</p>
+  <p><code>https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/porn-only/hosts</code></p>
+  <p>This is a one-way download of a public text file. The app sends no personal data, no
+  identifier, and no information about you as part of it — the request carries only what any HTTP
+  request unavoidably carries, such as your IP address, which is visible to GitHub as the host
+  serving the file and is not received or retained by us. GitHub's handling of that request is
+  covered by their own privacy policy. If the adult filter is switched off, this download does not
+  run.</p>
+  <p>Apart from this, the app makes no network requests.</p>
+
+  <h2>Where your data lives</h2>
+  <p>Your settings, limits, schedules, and daily usage statistics are stored on your device using
+  Android's DataStore and a local Room database. There is no cloud sync and no backup to our
+  systems, because there are no systems of ours for them to go to. Uninstalling Rein deletes
+  all of it.</p>
+  <p>If you use the app's CSV export feature, the resulting file is written to the app's own storage
+  and shared only with the app you explicitly pick from the Android share sheet. We never receive
+  it.</p>
+
+  <h2>Children</h2>
+  <p>Rein is intended for adults managing their own screen time. Because the app collects no
+  personal information from anyone, it collects none from children either.</p>
+
+  <h2>Your control</h2>
+  <p>Every permission described above can be revoked at any time from Android's Settings, and the
+  app will keep working with reduced capability rather than refusing to open. Some protections
+  deliberately require a waiting period before they can be switched off inside the app — that delay
+  is the feature you asked for, and it never applies to Android's own permission screens, which
+  remain available to you immediately and unconditionally.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the "last updated" date above changes with it. If a future version of
+  the app ever begins collecting data, this policy will be updated before that version ships and the
+  change will be described in the app's release notes.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: <a href="mailto:focusshield.app@gmail.com">focusshield.app@gmail.com</a></p>
+
+  <footer>
+    Rein · This policy applies to the Android application published under the package name
+    <code>com.musharrafapps.rein</code>.
+  </footer>
+
+</main>
+</body>
+</html>
